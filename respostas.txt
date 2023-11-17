@@ -1,0 +1,17 @@
+1-memória: i = 4
+console:1-22-333-
+
+2-memória: i = 8
+console:1: Cristo Redentor
+2: Chichén Itzá
+3: Coliseu
+4: Muralha da China
+5: Petra
+6: Machu Picchu
+7: Taj Mahal
+
+3-memória:2
+console:o valor buscado está entre as maravilhas
+
+4-memória:7
+console:4 - 7 - 11 - 25 - 33 - 47 - 
