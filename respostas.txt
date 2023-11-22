@@ -15,3 +15,94 @@ console:o valor buscado está entre as maravilhas
 
 4-memória:7
 console:4 - 7 - 11 - 25 - 33 - 47 - 
+
+5-
+<?php
+
+$matriz = [
+    [1, 3, 5], //1
+    [7, 9 ,11], //2
+    [13, 15, 17] //3
+    //1   2   3
+];
+
+var_dump($matriz);
+
+6-
+<?php
+
+$matriz = [
+    [1, 3, 5], //1
+    [7, 9 ,11], //2
+    [13, 15, 17] //3
+    //1   2   3
+];
+
+$soma = 0;
+
+for($i = 1; $i < 4; $i++){
+    for ($j = 1; $j < 4; $j++) { 
+        $soma = $soma + $matriz[$j][$i];
+    }
+}
+
+print($soma);
+
+7-
+<?php
+
+$soma = 0;
+
+for($i = 1; $i < 4; ++$i){
+    for ($j = 1; $j < 6; ++$j) { 
+        $matriz[$i][$j] = readline("Escreva o número para a linha ". $i. " e coluna ". $j. ".");
+    }
+}
+
+print("Os números pares são:");
+
+for($i = 1; $i < 4; ++$i){
+    for ($j = 1; $j < 6; ++$j) { 
+        if($matriz[$i][$j] % 2 == 0){
+            print($matriz[$i][$j]. " ");
+        }
+    }
+}
+
+8-
+Teste 0: int(4)
+
+Teste 1: bool(true)
+
+Teste 2: bool(false)
+
+Teste 3: int(3)
+
+Teste 4: bool(true)
+
+Teste 5: bool(true)
+
+9-
+Teste 0: int(5)
+
+Teste 1: bool(true)
+
+Teste 2: bool(false)
+
+Teste 3: bool(false)
+
+Teste 4: bool(true)
+
+Teste 5: string(4) "nome"
+
+Teste 6: string(9) "profissao"
+
+Teste 7: bool(true)
+
+10-
+<?php
+
+$frase = readLine("Escreva uma frase:");
+$caracter = readLine("Informe um caracter:");
+
+print(str_replace($caracter, "", $frase));
